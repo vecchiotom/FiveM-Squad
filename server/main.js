@@ -1,6 +1,7 @@
 var America = new Team("America");
 var Russia = new Team("Russia");
 var players = {};
+var spawnpoints= [new SpawnPoint(0.0,0.0,0.0)]
 
 
 on("playerConnecting", (name,SetKickReason,TempSource)=>{
