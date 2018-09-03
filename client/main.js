@@ -1,4 +1,6 @@
 let FirstSpawn = true
+var spawnpoints= [new SpawnPoint(0.0,0.0,0.0, "America")]
+
 on("playerSpawned", ()=>{
     setImmediate(()=>{
         FirstSpawn = false;
