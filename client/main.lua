@@ -1,3 +1,19 @@
+local firstspawn=true
+function ForceFirstPerson()
+    RenderFirstPersonCam(true)
+    HideHudAndRadarThisFrame()
+end
+
+AddEventHandler("playerSpawned", function()
+    if firstspawn then
+        CreateThread(function()
+            while true do
+                ForceFirstPerson()
+            end
+        end)
+    end
+end)
+
 exports.spawnmanager:setAutoSpawnCallback(function()
     for i,spawnpoint in ipairs(spawnpoints) do
         if spawnpoint.squad == squad and spawnpoint.team == team then
