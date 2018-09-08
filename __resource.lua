@@ -1,7 +1,7 @@
 client_scripts {
-    "client/main.js"
+    "client/main.lua"
 }
 
 server_scripts {
-    "server/main"
+    "server/main.lua"
 }
