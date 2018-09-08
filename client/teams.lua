@@ -1,0 +1,2 @@
+TEAM_USA = 1
+TEAM_RUSSIA = 2
