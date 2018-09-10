@@ -8,7 +8,7 @@ local verFile = LoadResourceFile(GetCurrentResourceName(), "version.json")
 local curVersion = json.decode(verFile).version
 Citizen.CreateThread( function()
 	local updatePath = "/vecchiotom/FiveM-Squad"
-	local resourceName = "SpotiFive ("..GetCurrentResourceName()..")"
+	local resourceName = "FiveM-Squad ("..GetCurrentResourceName()..")"
 	PerformHttpRequest("https://raw.githubusercontent.com"..updatePath.."/master/version.json", function(err, response, headers)
 		local data = json.decode(response)
 
